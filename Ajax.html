@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zn-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原生ajax</title>
+</head>
+<body>
+    <script>
+        //创建ajax对象
+        let xhr = new XMLHttpRequest();
+        //设置请求方式和请求地址
+        xhr.open("get","http://localhost:666/demo2");
+        //发送请求
+        xhr.send();
+        //获取服务器响应给客户端的数据
+        xhr.onload = function(){
+            console.log(xhr.responseText);
+        }
+    </script>
+</body>
+</html>
